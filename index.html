@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minuka De Silva</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class="social-links">
+        <div class="social-icons" id="social-icons">
           <a href="https://www.linkedin.com/in/minukadesilva/"
             ><img src="icons/linkedin.png" alt="LinkedIn"
           /></a>
@@ -20,8 +22,13 @@
             ><img src="icons/github.png" alt="Github"
           /></a>
         </div>
-        <ul class="nav-links">
+        </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,21 +38,21 @@
     <section class="hero">
       <div class="hero-content">
         <img src="minuka.jpg" alt="Minuka de Silva" class="profile-pic" />
-        <div class="intro-text">
+        <div class="hero-text">
           <h1>Hi, I'm <span> Minuka</span> De Silva</h1>
           <p>
             Undergraduate – BSc (Hons) in Information Technology and Management
             | University of Moratuwa | Front-end Web Developer in Training |
             Aspiring Tech Enthusiast | Digital Marketer
           </p>
-          <a href="cv.pdf" download class="download-cv-btn" target="_blank"
+          <a href="cv.pdf" download class="cv-btn" target="_blank"
             >Download CV</a
           >
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>About <span>Me</span></h2>
       <p>
         Currently pursuing my Bachelor's degree in Information Technology &
@@ -57,7 +64,7 @@
         now fuels my journey into the world of tech, where design meets
         functionality. I'm particularly interested in front-end development, and
         how technology can be used to tell compelling stories. I'm always
-        learning, experimenting, and growing—whether it's coding a sleek web
+        learning, experimenting, and growing, whether it's coding a sleek web
         interface or exploring the latest digital trends.
       </p>
     </section>
@@ -110,8 +117,8 @@
 
     <section class="projects">
       <h2>My <span>Projects</span></h2>
-      <div class="project-grid">
-        <div class="project-card">
+      <div class="project-cards">
+        <div class="p-card">
           <img src="projects/p2.png" alt="Toolnix Preview" />
           <h3>Toolnix</h3>
           <a
@@ -121,7 +128,7 @@
             >Preview</a
           >
         </div>
-        <div class="project-card">
+        <div class="p-card">
           <img src="projects/p1.png" alt="Ceylon Travel" />
           <h3>Ceylon Travel</h3>
           <a
@@ -132,7 +139,7 @@
           >
         </div>
 
-        <div class="project-card">
+        <div class="p-card">
           <img src="projects/p3.png" alt="Brew Haven Preview" />
           <h3>Brew Haven</h3>
           <a
@@ -142,7 +149,7 @@
             >Preview</a
           >
         </div>
-        <div class="project-card">
+        <div class="p-card">
           <img src="projects/p4.png" alt="Citrus website" />
           <h3>Citrus website</h3>
           <a
@@ -157,7 +164,7 @@
 
     <section class="certifications">
       <h2>My <span>Certifications</span></h2>
-      <div class="cert-card-container">
+      <div class="cert-container">
         <div class="c-card">
           <img src="c1.png" alt="Front End Web Development" />
           <h3>Front End Web Development</h3>
@@ -182,7 +189,17 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Minuka de Silva. All rights reserved.</p>
+      <p>2025 Minuka De Silva. All rights reserved.</p>
     </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      const socialIcons = document.getElementById("social-icons");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        socialIcons.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>

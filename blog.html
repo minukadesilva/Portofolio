@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Minuka de Silva | Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Minuka De Silva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/minukadesilva/"><img src="icons/linkedin.png" alt="LinkedIn" /></a>
-          <a href="https://medium.com/@minuka_desilva"><img src="icons/medium.png" alt="Medium" /></a>
-          <a href="https://github.com/minukadesilva"><img src="icons/github.png" alt="Github" /></a>
+        <div class="social-icons" id="social-icons">
+          <a href="https://www.linkedin.com/in/minukadesilva/"
+            ><img src="icons/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="https://medium.com/@minuka_desilva"
+            ><img src="icons/medium.png" alt="Medium"
+          /></a>
+          <a href="https://github.com/minukadesilva"
+            ><img src="icons/github.png" alt="Github"
+          /></a>
         </div>
-        <ul class="nav-links">
+        </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -24,7 +37,7 @@
 
     <section class="blog-hero">
       <h1>Welcome to My Blog</h1>
-      <p>I write about web development, tech, and digital marketing. Read more on my Medium blog.</p>
+      <p>I write about web development, tech, and digital marketing. <br> Read more on my Medium blog.</p>
       <a href="https://medium.com/@minuka_desilva" target="_blank" class="btn-medium">Visit My Medium Blog</a>
     </section>
 
@@ -35,13 +48,13 @@
         <div class="blog-card">
           <img src="blog/b1.jpg" alt="Article 1" />
           <h3>The Ultimate Guide to the CSS Box Model</h3>
-          <p>A beginner’s roadmap to launching your personal web presence.</p>
+          <p>Understand layout like a pro with this simple guide.</p>
           <a href="https://medium.com/@minuka_desilva/the-ultimate-guide-to-the-css-box-model-0a497b77aa3b" target="_blank" class="btn-view">View More</a>
         </div>
         <div class="blog-card">
           <img src="blog/b2.jpeg" alt="Article 2" />
           <h3>Types of CSS</h3>
-          <p>Understand layout like a pro with this simple guide.</p>
+          <p>A beginner’s roadmap to launching your personal web presence.</p>
           <a href="https://medium.com/@yourusername/article2" target="_blank" class="btn-view">View More</a>
         </div>
         <div class="blog-card">
@@ -54,7 +67,17 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Minuka De Silva. All rights reserved.</p>
+      <p>2025 Minuka De Silva. All rights reserved.</p>
     </footer>
+        <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      const socialIcons = document.getElementById("social-icons");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        socialIcons.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
