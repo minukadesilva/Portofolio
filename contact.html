@@ -64,25 +64,24 @@
     <footer>
       <p>2025 Minuka De Silva. All rights reserved.</p>
     </footer>
-    <script>
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          document.getElementById("response-message").textContent =
-            "Thanks! Your message has been received.";
-          document.getElementById("contact-form").reset();
-        });
+<script>
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been received.");
+      document.getElementById("contact-form").reset();
+    });
 
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("nav-links");
-      const socialIcons = document.getElementById("social-icons");
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const socialIcons = document.getElementById("social-icons");
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-        socialIcons.classList.toggle("show");
-      });
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    socialIcons.classList.toggle("show");
+  });
+</script>
 
-    </script>
   </body>
 </html>
