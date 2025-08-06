@@ -29,6 +29,9 @@ body {
 span {
   color: var(--primary-color);
 }
+
+/* Header Section */
+
 header {
   background-color: var(--white);
   padding: 1rem 2rem;
@@ -42,12 +45,10 @@ header {
   position: relative;
 }
 
-.hamburger {
+.hamburger-container {
   display: none;
-  font-size: 2rem;
-  color: var(--background);
-  cursor: pointer;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -74,6 +75,8 @@ header {
   color: #000;
   font-weight: 600;
 }
+
+/* Hero Section */
 
 .hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
@@ -146,6 +149,8 @@ h2 {
   text-align: center;
 }
 
+/*Skills Section */
+
 .skills .skill-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -177,9 +182,7 @@ h2 {
   transform: translateY(-5px);
 }
 
-.c-card:hover {
-  transform: translateY(-5px);
-}
+/* Certifications Section */
 
 .cert-container {
   display: grid;
@@ -205,85 +208,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-footer {
-  background: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+.c-card:hover {
+  transform: translateY(-5px);
 }
 
-.contact-hero {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url("bg.jpg") center/cover no-repeat;
-  padding: 4rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.contact-section {
-  width: 100%;
-  max-width: 600px;
-  background-color: rgba(26, 26, 26, 0.9);
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #0b5ed7;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
-}
-
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: var(--text-dark);
-}
-
-#contact-form .form-group {
-  margin-bottom: 1.5rem;
-}
-
-#contact-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--text-light);
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #222;
-  color: var(--text-dark);
-  font-size: 1rem;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-  outline: 2px solid var(--primary-color);
-}
-
-#contact-form button {
-  width: 100%;
-  padding: 0.9rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#contact-form button:hover {
-  background-color: #0b5ed7;
-}
-
+/* Projects Section */
 .projects {
   padding: 4rem 2rem;
 }
@@ -307,10 +236,6 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.p-card:hover {
-  transform: translateY(-5px);
-}
-
 .p-card img {
   width: 100%;
   height: 180px;
@@ -322,6 +247,10 @@ footer {
   margin: 1rem 0;
   font-size: 1.4rem;
   color: var(--text-dark);
+}
+
+.p-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-btn {
@@ -338,6 +267,18 @@ footer {
 .project-btn:hover {
   background-color: #0b5ed7;
 }
+
+/* Footer Section */
+
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Blog hero Section */
 
 .blog-hero {
   background: linear-gradient(
@@ -387,6 +328,8 @@ footer {
   margin-bottom: 2rem;
   color: var(--white);
 }
+
+/* Blog article Section */
 
 .blog-grid {
   display: grid;
@@ -441,6 +384,81 @@ footer {
 }
 
 .blog-card .btn-view:hover {
+  background-color: #0b5ed7;
+}
+
+/* Contact hero Section */
+
+.contact-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url("bg.jpg") center/cover no-repeat;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #0b5ed7;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+/* Contact form Section */
+
+#contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
   background-color: #0b5ed7;
 }
 
@@ -534,5 +552,37 @@ footer {
   .blog-card h3,
   .project-card h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .hamburger,
+  .close-icon {
+    font-size: 2rem;
+    color: var(--background);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .hamburger.hide {
+    display: none;
+  }
+
+  .close-icon.show {
+    display: block;
   }
 }
