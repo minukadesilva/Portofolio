@@ -80,7 +80,7 @@ header {
 
 .hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url("bg.jpg") center/cover no-repeat;
+    url("assets/bg.jpg") center/cover no-repeat;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -286,7 +286,7 @@ footer {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.95)
     ),
-    url("bg.jpg") center/cover no-repeat;
+    url("assets/bg.jpg") center/cover no-repeat;
   padding: 5rem 2rem;
   text-align: center;
   color: var(--white);
@@ -391,7 +391,7 @@ footer {
 
 .contact-hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url("bg.jpg") center/cover no-repeat;
+    url("assets/bg.jpg") center/cover no-repeat;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
